@@ -176,10 +176,12 @@ c. Discoveryの設定で使うのでモデルIDを控えておく
 a. ***config-default-kg.json*** を編集し、先ほどDeployしたカスタムモデルのIDを反映
 
 Before：こちらを使うとNLU標準モデルを利用してKGを作ることができます。
+
 ![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2018.16.01.jpg)
 
 
-After:
+After :
+
 ![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2018.17.48.jpg)
 
 
