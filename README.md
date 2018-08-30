@@ -11,7 +11,7 @@ Watson Discovery ServiceでKnowledge Graphを利用する手順です。Knowledg
 
 
 ## 前提
-短時間で一連の流れを体感することを目的としたハンズオン用のシナリオ・データに合わせた手順となっているため、実際に利用する際には少し異なる部分も発生します。
+短時間で一連の流れを体感することを主眼に置いたハンズオンとなっています。実際に利用する際にはTypeSystemの複雑性、WKSトレーニングに必要なGround Truthのボリューム、Discoveryに取り込むボリュームなどが異なってきます。
 
 
 ## 0.シナリオ、データ
@@ -20,8 +20,10 @@ Watson Discovery ServiceでKnowledge Graphを利用する手順です。Knowledg
 できあがりイメージ：
 
 
+
 ## 1.インスタンス作成
 IBM CloudからWatson Discovery Serviceのインスタンスを作成する。カスタムモデルを利用する場合はWatson Knowledge Studioのインスタンスも作成する。
+
 
 
 ## 2.カスタムモデルの作成
@@ -40,6 +42,7 @@ IBM CloudからWatson Discovery Serviceのインスタンスを作成する。�
 |  |  |  |  |
 
 
+
 ### 2-2. TypeSystemのWKSへの登録
 a. WKS管理画面を起動
 
@@ -51,18 +54,23 @@ Entityのイメージ：
 ![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2016.15.09.jpg)
 
 Relationのイメージ：
-!(https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2016.17.29.jpg)
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2016.17.29.jpg)
 
-(参考)マニュアルリンク：https://console.bluemix.net/docs/services/knowledge-studio/typesystem.html#typesystem
+(参考)製品マニュアルへのリンク：https://console.bluemix.net/docs/services/knowledge-studio/typesystem.html#typesystem
+
 
 
 ### 2-3. ドキュメントの登録
-WKSに登録できる基本的なファイルフォーマットはcsv, 登録後アノテーションセット(ヒューマンアノテーションをアサインする単位)を作成
-a. xxx.csvをupload: Assets -> Documents -> Upload Document Sets
-b. アノテーションセットを作成: Create Annotation Sets
+WKSに登録できる基本的なファイルフォーマットはcsv(1列目がタイトル、2列目が本文), 登録後アノテーションセット(ヒューマンアノテーションをアサインする単位)を作成する。
 
-マニュアル：https://console.bluemix.net/docs/services/knowledge-studio/documents-for-annotation.html#documents-for-annotation
-参考画像：
+a. wks-data.csvをupload: Assets -> Documents -> Upload Document Sets
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2016.33.26.jpg)
+
+b. アノテーションセットを作成: Create Annotation Sets
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2016.33.53.jpg)
+
+(参考)製品マニュアルへのリンク：https://console.bluemix.net/docs/services/knowledge-studio/documents-for-annotation.html#documents-for-annotation
+
 
 
 ### 2-4. PreAnnotation
