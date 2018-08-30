@@ -65,7 +65,7 @@ Relationの登録後の画面：
 ### 2-3. ドキュメントの登録
 WKSに登録できる基本的なファイルフォーマットはcsv(1列目がタイトル、2列目が本文), 登録後アノテーションセット(ヒューマンアノテーションをアサインする単位)を作成する。
 
-a. ***wks-data.csv***をupload: Assets -> Documents -> Upload Document Sets
+a. ***wks-data.csv*** をupload: Assets -> Documents -> Upload Document Sets
 
 ドキュメント登録後の画面：
 ![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2016.33.26.jpg)
@@ -173,7 +173,7 @@ c. Discoveryの設定で使うのでモデルIDを控えておく
 
 ## 3. DiscoveryのKG用設定
 ドキュメント登録前に設定をKG用にする必要があります。この設定はGUI(Tooling)からは実施できないのでコマンドにて実施します。KGの前提としてはRelationのモデルが指定されていること、Entityのモデル(Relationと同じもの)が指定され、mentions, mentions_types, sentence_locationsがTrueになっていること。
-a. ***config-default-kg.json***を編集し、先ほどDeployしたカスタムモデルのIDを反映
+a. ***config-default-kg.json*** を編集し、先ほどDeployしたカスタムモデルのIDを反映
 
 Before：こちらを使うとNLU標準モデルを利用してKGを作ることができます。
 ![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2018.16.01.jpg)
@@ -183,7 +183,7 @@ After:
 ![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2018.17.48.jpg)
 
 
-b. ***config-default-kg.json***をアップロード(curlコマンド)
+b. ***config-default-kg.json*** をアップロード(curlコマンド)
 
 curl -X POST -u "{username}":"{password}" -H "Content-Type: application/json" -d @config-default-kg.json "https://gateway.watsonplatform.net/discovery/api/v1/environments/{environment_id}/configurations?version=2018-08-01"
 
@@ -199,7 +199,7 @@ c. configurationの変更：Manage data -> Configuration -> Switch -> kg_config 
 
 
 ## 4. Discoveryへのデータ取り込み
-a. ***Baseball-Player-wiki***フォルダの5ファイルをローカルPCにダウンロード
+a. ***Baseball-Player-wiki*** フォルダの5ファイルをローカルPCにダウンロード
 
 b. 取り込みした際のエンリッチメント結果をサンプル的に確認：Manage data -> Configuration -> Edit -> 右側のペインでドキュメントを指定、再度そのドキュメントを選択すると取り込みのプレビューができる
 
