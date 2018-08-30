@@ -4,14 +4,20 @@ Watson Discovery ServiceでKnowledge Graphを利用する手順です。Knowledg
 公式マニュアル：https://console.bluemix.net/docs/services/discovery/building-kg.html#watson-discovery-knowledge-graph
 
 
+
+
 ## KGの大まかな説明
 投入したドキュメントに記載されているEntity(カテゴリ付きの単語)とRelation(Entity間の関係)を抽出し知識ベース化する。最近の機械学習ベースのAIの苦手な根拠の提示や推論といった領域が期待されている。Discoveryに内蔵されているNLU(Natural Language Understanding)で持っている標準のEntity/Relationを抽出するモデル(news model)を利用することもできるが、各種ドメインのドキュメントを対象にする場合にはWKS(Watson Knowledge Studio:Entity/Relationの抽出を行うモデルの開発ツール)を利用してカスタムモデルを作り、DiscoveryにDeployして利用する。
 
 ユースケースの目的に合わせてKG用のクエリーを発行して結果うけとり、場合によっては可視化して人間の理解や意思決定・判断に役立てる。
 
 
+
+
 ## 前提
 短時間で一連の流れを体感することを主眼に置いたハンズオンとなっています。実際に利用する際にはTypeSystemの複雑性、WKSトレーニングに必要なGround Truthのボリューム、Discoveryに取り込むボリュームなどが異なってきます。
+
+
 
 
 ## 0.シナリオ、データ
@@ -21,8 +27,12 @@ Watson Discovery ServiceでKnowledge Graphを利用する手順です。Knowledg
 
 
 
+
+
 ## 1.インスタンス作成
 IBM CloudからWatson Discovery Serviceのインスタンスを作成する。カスタムモデルを利用する場合はWatson Knowledge Studioのインスタンスも作成する。
+
+
 
 
 
@@ -171,6 +181,8 @@ c. Discoveryの設定で使うのでモデルIDを控えておく
 
 
 
+
+
 ## 3. DiscoveryのKG用設定
 ドキュメント登録前に設定をKG用にする必要があります。この設定はGUI(Tooling)からは実施できないのでコマンドにて実施します。KGの前提としてはRelationのモデルが指定されていること、Entityのモデル(Relationと同じもの)が指定され、mentions, mentions_types, sentence_locationsがTrueになっていること。
 a. ***config-default-kg.json*** を編集し、先ほどDeployしたカスタムモデルのIDを反映
@@ -200,6 +212,8 @@ c. configurationの変更：Manage data -> Configuration -> Switch -> kg_config 
 
 
 
+
+
 ## 4. Discoveryへのデータ取り込み
 a. ***Baseball-Player-wiki*** フォルダの5ファイルをローカルPCにダウンロード
 
@@ -215,9 +229,19 @@ or browse from computer"
 ![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2018.48.13.jpg)
 
 
+以下のように"Errors and warnings"が0件で、"Document count"が5件となって入れば正常にuploadが完了している。
+
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2019.06.13.jpg)
+
+
+
+
 
 ## 5. クエリーの発行
 Build queries -> Knowledge Graph
+
+
+
 
 
 
