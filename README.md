@@ -11,10 +11,13 @@ Watson Discovery ServiceでKnowledge Graphを利用する手順です。Knowledg
 
 
 ## 前提
-短時間で一連の流れを体感するためのハンズオン用のシナリオ・データに合わせた手順となっているため、実際に利用する際には少し異なるところも発生します。
+短時間で一連の流れを体感することを目的としたハンズオン用のシナリオ・データに合わせた手順となっているため、実際に利用する際には少し異なる部分も発生します。
 
 
-## 0.シナリオ・データ
+## 0.シナリオ、データ
+野球選手の所属チームやリーグの知識ベースを作成し、その知識ベースを元にナレッジの探索を行う。利用データは以下の選手のwikipediaのabstract.(松井、ダルビッシュ、大谷、田中、イチロー)
+
+できあがりイメージ：
 
 
 ## 1.インスタンス作成
@@ -23,24 +26,28 @@ IBM CloudからWatson Discovery Serviceのインスタンスを作成する。�
 
 ## 2.カスタムモデルの作成
 ### 2-1. TypeSystem(Entity/Relation)の設計
-| Entity名 | 説明 |
-----|---- 
-| Person | 人 |
-| Location | 場所 |
-| Organization | 組織・会社 |
+| Entity名 | 説明 | 補足
+----|----|----
+| Person | 人 | 選手
+| Organization | 組織・会社 | 球団およびメジャーリーグ
+|  |  | 
 
 
 | Relation名 | 説明 | From | To |
 ----|----|----|---- 
-| locatedAt | Entityがどこに存在するか | Person,Organization | Location |
-| employedBy | Personがどこで働いているか | Person | Organization |
-| bornIn | Personがどこで生まれたか | Person | Location |
+| employedBy | 雇用関係。今回のシナリオでは選手がどこに所属しているか。 | Person | Organization |
+| partOf | 従属関係。今回のシナリオではどの球団がどのリーグか | Organization | Organization |
+|  |  |  |  |
 
 
 ### 2-2. TypeSystemのWKSへの登録
 a. WKS管理画面を起動
 b. 任意の名前でWorkSpaceを作成
 c. 上記のTypeSystemをWKSに登録
+
+Entityのイメージ：
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2016.15.09.jpg)
+
 
 マニュアル：https://console.bluemix.net/docs/services/knowledge-studio/typesystem.html#typesystem
 参考画像：
