@@ -100,12 +100,26 @@ c. ドキュメントセットへアプライ: Apply This Pre-Annotator -> ド�
 
 ### 2-5. Ground Truthの作成(ヒューマンアノテーション)
 Entityの修正とRelationのアノテーション
-a. アノテーションタスクの追加:Machine Learning Model -> Annotation Tasks -> Add Task
-b. ヒューマンアノテーションの実施:
-c. 
 
-マニュアル：https://console.bluemix.net/docs/services/knowledge-studio/annotate-documents.html#annotate-documents
-参考画像：
+a. アノテーションタスクの追加:Machine Learning Model -> Annotation Tasks -> Add Task
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2016.54.05.jpg)
+
+
+b. ヒューマンアノテーションの実施:作成したタスクを選択
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2016.55.15.jpg)
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2016.56.12.jpg)
+
+c. 5選手分のEntityの修正とRelation, Coreferenceのアノテーションを行う。最後にsaveするのを忘れないように。
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2016.56.33.jpg)
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2017.01.57.jpg)
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2017.16.56.jpg)
+
+d. 全て完了したらsubmitを行う。
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2017.29.10.jpg)
+
+
+(参考)製品マニュアルへのリンク：https://console.bluemix.net/docs/services/knowledge-studio/annotate-documents.html#annotate-documents
+
 
 
 ### 2-6. MLM(マシンラーニングモデル)作成
