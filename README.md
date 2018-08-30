@@ -238,9 +238,9 @@ or browse from computer"
 
 
 ## 5. クエリーの発行
-Build queries -> Knowledge Graph
+Toolingにてクエリーを発行: Build queries -> Knowledge Graph
 
-
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2020.04.59.jpg)
 
 
 
@@ -250,8 +250,24 @@ Build queries -> Knowledge Graph
 http://www.webgraphviz.com/
 
 a. Discovery Tooling画面をChromeで開き、右クリックで「検証」を選択
-b. "Console"に切り替え、xxx.jsの内容をコピー&ペースト
-参考画像：
-c. Discovery Toolingからクエリー発行
-. "Console"に出力される内容をコピーし、Graphvizのウィンドウにペースト
+
+b. Discovery ToolingからRelationのクエリーを発行
+
+c. "Console"に切り替え、 ***visualize.js*** の内容をコピー&ペースト
+
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2020.17.54.jpg)
+
+
+d. "Console"に出力される内容をコピーし、Graphvizのウィンドウにペースト
+
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2020.18.12.jpg)
+
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2020.18.48.jpg)
+
+
+e. 二つ目のEntityについても同様にb,cの手順にてクエリーの結果を変換し、コピー。その内容をGraphvizのウィンドウに追加することにより二つのEntityの関係が視覚的につかめる。
+
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2020.20.39.jpg)
+
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2020.21.02.jpg)
 
