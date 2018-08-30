@@ -28,6 +28,8 @@ IBM CloudからWatson Discovery Serviceのインスタンスを作成する。�
 
 ## 2.カスタムモデルの作成
 ### 2-1. TypeSystem(Entity/Relation)の設計
+以下、今回のハンズオンのTypeSystem。実際はユースケースに合わせて設計する必要がある。
+
 | Entity名 | 説明 | 補足
 ----|----|----
 | Person | 人 | 選手
@@ -50,10 +52,10 @@ b. 任意の名前でWorkSpaceを作成
 
 c. 上記のTypeSystemをWKSに登録
 
-Entityのイメージ：
+Entityの登録後の画面：
 ![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2016.15.09.jpg)
 
-Relationのイメージ：
+Relationの登録後の画面：
 ![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2016.17.29.jpg)
 
 (参考)製品マニュアルへのリンク：https://console.bluemix.net/docs/services/knowledge-studio/typesystem.html#typesystem
@@ -64,9 +66,13 @@ Relationのイメージ：
 WKSに登録できる基本的なファイルフォーマットはcsv(1列目がタイトル、2列目が本文), 登録後アノテーションセット(ヒューマンアノテーションをアサインする単位)を作成する。
 
 a. wks-data.csvをupload: Assets -> Documents -> Upload Document Sets
+
+ドキュメント登録後の画面：
 ![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2016.33.26.jpg)
 
 b. アノテーションセットを作成: Create Annotation Sets
+
+アノテーションセット作成画面：
 ![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2016.33.53.jpg)
 
 (参考)製品マニュアルへのリンク：https://console.bluemix.net/docs/services/knowledge-studio/documents-for-annotation.html#documents-for-annotation
@@ -74,13 +80,22 @@ b. アノテーションセットを作成: Create Annotation Sets
 
 
 ### 2-4. PreAnnotation
-簡略化のためにNLUの標準モデルで事前にEntityのアノテーションを実施(辞書で実施する方法もあるが今回は使わない)
-a. 設定画面へ移動：Machine Learning Model -> Pre-Annotation -> Natural Language Understanding
-b. TypeSystemとNLU標準のEntity Typeをマッピング
-c. ドキュメントセットへアプライ: Apply This Pre-Annotator
+簡略化のためにNLUの標準モデルで事前にEntityのアノテーションを実施(辞書で実施する方法もあるが今回のハンズオンでは使わない)
 
-マニュアル：https://console.bluemix.net/docs/services/knowledge-studio/preannotation.html#preannotation
-参考画像：
+a. 設定画面へ移動：Machine Learning Model -> Pre-Annotation -> Natural Language Understanding
+
+b. TypeSystemとNLU標準のEntity Typeをマッピング
+
+マッピング設定後の画面：
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2016.45.59.jpg)
+
+c. ドキュメントセットへアプライ: Apply This Pre-Annotator -> ドキュメントセットを選択 -> Run
+
+設定画面：
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2016.46.22.jpg)
+
+(参考)製品マニュアルへのリンク：https://console.bluemix.net/docs/services/knowledge-studio/preannotation.html#preannotation
+
 
 
 ### 2-5. Ground Truthの作成(ヒューマンアノテーション)
