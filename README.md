@@ -5,7 +5,7 @@ Watson Discovery ServiceでKnowledge Graphを利用する手順です。Knowledg
 
 ---
 ### Knowledge Graphの大まかな説明
-投入したドキュメントに記載されているEntity(カテゴリ付きの単語)とRelation(Entity間の関係)を抽出し知識ベース化する。最近の機械学習ベースのAIの苦手な根拠の提示や推論といった領域が期待されている。Discoveryに内蔵されているNLU(Natural Language Understanding)で持っている標準のEntity/Relationを抽出するモデル(news model)を利用することもできるが、各種ドメインのドキュメントを対象にする場合にはWKS(Watson Knowledge Studio:Entity/Relationの抽出を行うモデルの開発ツール)を利用してカスタムモデルを作り、DiscoveryにDeployして利用する。
+投入したドキュメントに記載されているEntity(カテゴリ付きの単語)とRelation(Entity間の関係)を抽出し知識ベース化する。従来の大量のテキストデータの中から抽出したそれぞれの情報を検索や分析に活用し見るべきドキュメントを探すアプローチ(ドキュメントセントリック)とは異なり、大量のテキストデータから抽出した情報をつなぎ合わせてモノとモノの関係が繋がった状態にしそこから知見を得ていくというアプローチ(ナレッジセントリック)となる。最近の機械学習ベースのAIの苦手な根拠の提示や推論といった領域が期待されている。Discoveryに内蔵されているNLU(Natural Language Understanding)で持っている標準のEntity/Relationを抽出するモデル(news model)を利用することもできるが、各種ドメインのドキュメントを対象にする場合にはWKS(Watson Knowledge Studio:Entity/Relationの抽出を行うモデルの開発ツール)を利用してカスタムモデルを作り、DiscoveryにDeployして利用する。
 
 ユースケースの目的に合わせてKG用のクエリーを発行して結果うけとり、場合によっては可視化して人間の理解や意思決定・判断に役立てる。
 
@@ -32,7 +32,9 @@ Watson Discovery ServiceでKnowledge Graphを利用する手順です。Knowledg
 
 
 ### 1.インスタンスの作成
-IBM CloudからWatson Discovery Serviceのインスタンスを作成する。カスタムモデルを利用する場合はWatson Knowledge Studioのインスタンスも作成する。
+IBM CloudからWatson Discovery Serviceのインスタンスを作成する。カスタムモデルを利用する場合はWatson Knowledge Studioのインスタンスも作成する。  
+Watson Discovery ServiceについてはAdvanced Plan(有償)が必要  
+Watson Knowledge StudioについてはLit Plan(無償)でもハンズオンは可能であるが、複数人で一つのアノテーター開発を行うときにはStandard Plan(有償)以上が必要  
 
 
 ---
@@ -58,7 +60,7 @@ IBM CloudからWatson Discovery Serviceのインスタンスを作成する。�
 
 
 #### 2-2. TypeSystemのWKSへの登録
-a. WKS管理画面を起動  
+a. WKS管理画面を起動:IBM CloudダッシュボードにあるWKSインスタンスを選択 -> 管理 -> "ツールの起動"  
 b. 任意の名前でWorkSpaceを作成  
 c. 2-1のTypeSystemをWKSに登録
 
