@@ -25,7 +25,7 @@ Watson Discovery ServiceでKnowledge Graphを利用する手順です。Knowledg
 ![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-31%2017.57.55.jpg)
 
 作業の流れ：
-![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-09-03%2013.26.57.jpg)
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-09-03%2013.37.15.jpg)
 
 
 ---
@@ -186,7 +186,7 @@ After :
 
 
 b. ***config-default-kg.json*** をアップロード(curlコマンド)  
-~~~curl -X POST -u "{username}":"{password}" -H "Content-Type: application/json" -d @config-default-kg.json "https://gateway.watsonplatform.net/discovery/api/v1/environments/{environment_id}/configurations?version=2018-08-01"~~~
+curl -X POST -u "{username}":"{password}" -H "Content-Type: application/json" -d @config-default-kg.json "https://gateway.watsonplatform.net/discovery/api/v1/environments/{environment_id}/configurations?version=2018-08-01"
 
 
 *IAM環境の場合はusername/passwordをapikeyに変更する。上記URLはDallasのエンドポイントのため、各Regionのものに変更する。*  
