@@ -22,10 +22,11 @@ Watson Discovery ServiceでKnowledge Graphを利用する手順です。Knowledg
 野球選手の所属チームやリーグの知識ベースを作成し、その知識ベースを元にナレッジの探索を行う。利用データは以下の選手のwikipediaのabstract.(松井、ダルビッシュ、大谷、田中、イチロー)
 
 知識ベースのイメージ：  
-![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/blob/picture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-31%2017.57.55.jpg)
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/picture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-31%2017.57.55.jpg)
+
 
 作業の流れ：
-![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/blob/picture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-09-03%2013.37.15.jpg)
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/picture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-09-03%2013.37.15.jpg)
 
 
 ---
