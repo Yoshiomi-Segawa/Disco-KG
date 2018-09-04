@@ -66,10 +66,10 @@ b. 任意の名前でWorkSpaceを作成
 c. 2-1のTypeSystemをWKSに登録
 
 Entityの登録後の画面：
-![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2016.15.09.jpg)
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/picture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2016.15.09.jpg)
 
 Relationの登録後の画面：
-![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2016.17.29.jpg)
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/picture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2016.17.29.jpg)
 
 (参考)製品マニュアルへのリンク：https://console.bluemix.net/docs/services/knowledge-studio/typesystem.html#typesystem
 
@@ -80,11 +80,11 @@ WKSに登録できる基本的なファイルフォーマットはcsv(1列目が
 
 a. このディレクトリにある***wks-data.csv*** をupload: Assets -> Documents -> Upload Document Sets  
 ドキュメント登録後の画面：
-![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2016.33.26.jpg)
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/picture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2016.33.26.jpg)
 
 b. アノテーションセットを作成: Create Annotation Sets  
 アノテーションセット作成画面：
-![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2016.33.53.jpg)
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/picture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2016.33.53.jpg)
 
 (参考)製品マニュアルへのリンク：https://console.bluemix.net/docs/services/knowledge-studio/documents-for-annotation.html#documents-for-annotation
 
@@ -96,11 +96,11 @@ b. アノテーションセットを作成: Create Annotation Sets
 a. 設定画面へ移動：Machine Learning Model -> Pre-Annotation -> Natural Language Understanding  
 b. TypeSystemとNLU標準のEntity Typeをマッピング  
 マッピング設定後の画面：
-![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2016.45.59.jpg)
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/picture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2016.45.59.jpg)
 
 c. ドキュメントセットへアプライ: Apply This Pre-Annotator -> ドキュメントセットを選択 -> Run  
 設定画面：
-![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2016.46.22.jpg)
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/picture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2016.46.22.jpg)
 
 (参考)製品マニュアルへのリンク：https://console.bluemix.net/docs/services/knowledge-studio/preannotation.html#preannotation
 
@@ -110,30 +110,30 @@ c. ドキュメントセットへアプライ: Apply This Pre-Annotator -> ド�
 WKSのGround TruthエディターにてEntityの修正とRelationのアノテーションを実施する。
 
 a. アノテーションタスクの追加:Machine Learning Model -> Annotation Tasks -> Add Task  
-![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2016.54.05.jpg)
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/picture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2016.54.05.jpg)
 
 
 b. ヒューマンアノテーションの実施:作成したタスクを選択  
-![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2016.55.15.jpg)
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/picture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2016.55.15.jpg)
 
 
 c. 5選手分のEntityの修正とRelation, Coreferenceのアノテーションを行う。最後にsaveするのを忘れないように。  
-![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2016.56.12.jpg)
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/picture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2016.56.12.jpg)
 
 Entity:マーカーを引き、どのエンティティかを選択  
-![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2016.56.33.jpg)
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/picture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2016.56.33.jpg)
 
 Relation:Entity同士を線でつなぎ、どのRelationかを選択  
-![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2017.01.57.jpg)
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/picture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2017.01.57.jpg)
 
 Coreference:同じものを順番に選択していき、最後に同じものを選択する(シャープ付きの番号が採番されればOK)  
-![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2017.16.56.jpg)
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/picture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2017.16.56.jpg)
 
 d. 全て完了したらsubmitを行う。: Submit All Documents  
-![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2017.29.10.jpg)
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/picture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2017.29.10.jpg)
 
 e. submitされたHumanAnnotationをacceptする。： Machine Learning Model -> Annotation Tasks -> タスクを選択 -> アノテーションセットにチェックを入れて"Accept"  
-![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2017.29.10.jpg)
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/picture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2017.29.10.jpg)
 
 (通常は複数の人のHumanAnnotation結果を上位者が一貫性の観点からチェック・修正した後に行う作業)　
 (参考)製品マニュアルへのリンク：https://console.bluemix.net/docs/services/knowledge-studio/annotate-documents.html#annotate-documents
@@ -143,13 +143,13 @@ e. submitされたHumanAnnotationをacceptする。： Machine Learning Model ->
 #### 2-6. MLM(マシンラーニングモデル)作成
 a. トレーニングデータを使いカスタムモデルを作成する。: Machine Learning Model -> Performance -> Train and evaluate -> セットを選択し、データの割合(トレーニング、テスト、ブラインド)を変更し"Train"  
 トレーニング設定画面：  
-![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2017.29.10.jpg)
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/picture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2017.29.10.jpg)
 
 
 (通常はGround Truth(submit/acceptされたHumanAnnotation)をトレーニングとテスト、ブラインドに分けてカスタムモデルの生成とモデルの評価を行う。今回はハンズオンのため評価部分を割愛している。)
 
 通常はこのような割合でデータを分ける：  
-![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2017.16.56.jpg)
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/picture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2017.16.56.jpg)
 
 
 b. トレーニングには数分かかるので、終わるまで待つ。
@@ -163,14 +163,14 @@ b. トレーニングには数分かかるので、終わるまで待つ。
 作成したカスタムモデルを自身のDiscoveryインスタンスへ適用する。同じRegionに存在するDiscoveryにしかDeployできない点に注意。
 
 a. カスタムモデルのスナップショットを取得 ： Machine Learning Model -> Versions -> Take Snapshot -> OK  
-![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2018.03.56.jpg)
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/picture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2018.03.56.jpg)
 
 b. スナップショットをDiscoveryインスタンスへ適用 ： Deploy -> Discovery -> Next -> 対象を選択して"Deploy"  
-![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2018.06.17.jpg)  
-![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2018.07.12.jpg)
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/picture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2018.06.17.jpg)  
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/picture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2018.07.12.jpg)
 
 c. Discoveryの設定で使うのでモデルIDを控えておく  
-![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2018.08.00.jpg)
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/picture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2018.08.00.jpg)
 
 (参考)製品マニュアルへのリンク：https://console.bluemix.net/docs/services/knowledge-studio/publish-ml.html#publish-ml
 
@@ -181,11 +181,11 @@ c. Discoveryの設定で使うのでモデルIDを控えておく
 a. このディレクトリにある***config-default-kg.json*** をローカルにダウンロードして編集し、先ほどDeployしたカスタムモデルのIDを反映
 
 Before：こちらを使うとNLU標準モデルを利用してKGを作ることができます。  
-![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2018.16.01.jpg)
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/picture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2018.16.01.jpg)
 
 
 After :  
-![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2018.17.48.jpg)
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/picture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2018.17.48.jpg)
 
 
 b. ***config-default-kg.json*** をアップロード(curlコマンド)  
@@ -197,7 +197,7 @@ curl -X POST -u "{username}":"{password}" -H "Content-Type: application/json" -d
 
 
 c. configurationの変更：Manage data -> Configuration -> Switch -> kg_config -> Switch  
-![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2018.38.11.jpg)
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/picture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2018.38.11.jpg)
 
 
 
@@ -207,17 +207,17 @@ c. configurationの変更：Manage data -> Configuration -> Switch -> kg_config 
 ## 4. Discoveryへのデータ取り込み
 a. このディレクトリの***Baseball-Player-wiki*** フォルダの5ファイルをローカルPCにダウンロード  
 b. 取り込みした際のエンリッチメント結果をサンプル的に確認：Manage data -> Configuration -> Edit -> 右側のペインでドキュメントを指定、再度そのドキュメントを選択すると取り込みのプレビューができる  
-![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2018.43.48.jpg)
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/picture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2018.43.48.jpg)
 
-![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2018.44.38.jpg)
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/picture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2018.44.38.jpg)
 
 c. aにてダウンロードしたファイルを全て取り込み : Manage data -> "Drag and drop your documents here
 or browse from computer"  
-![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2018.48.13.jpg)
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/picture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2018.48.13.jpg)
 
 
 以下のように"Errors and warnings"が0件で、"Document count"が5件となって入れば正常にuploadが完了している。  
-![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2019.06.13.jpg)
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/picture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2019.06.13.jpg)
 
 
 ---
@@ -226,7 +226,7 @@ or browse from computer"
 ## 5. クエリーの発行
 Toolingにてクエリーを発行: Build queries -> Knowledge Graph
 
-![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2020.04.59.jpg)
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/picture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2020.04.59.jpg)
 
 
 ---
@@ -239,17 +239,17 @@ http://www.webgraphviz.com/
 a. Discovery Tooling画面をChromeで開き、右クリックで「検証」を選択  
 b. Discovery ToolingからRelationのクエリーを発行  
 c. "Console"に切り替え、 このディレクトリにある***visualize.js*** の内容をコピー&ペースト  
-![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2020.17.54.jpg)
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/picture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2020.17.54.jpg)
 
 
 d. "Console"に出力される内容をコピーし、Graphvizのウィンドウにペースト  
-![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2020.18.12.jpg)
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/picture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2020.18.12.jpg)
 
-![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2020.18.48.jpg)
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/picture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2020.18.48.jpg)
 
 
 e. 二つ目のEntityについても同様にb,cの手順にてクエリーの結果を変換し、コピー。その内容をGraphvizのウィンドウに追加することにより二つのEntityの関係が視覚的につかめる。  
-![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2020.20.39.jpg)
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/picture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2020.20.39.jpg)
 
-![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/master/piture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2020.21.02.jpg)
+![alt](https://github.com/Yoshiomi-Segawa/Disco-KG/blob/picture/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202018-08-30%2020.21.02.jpg)
 
