@@ -33,7 +33,7 @@ Watson Discovery ServiceでKnowledge Graphを利用する手順です。Knowledg
 
 
 ### 1.インスタンスの作成
-IBM CloudからWatson Discovery Serviceのインスタンスを作成する。カスタムモデルを利用する場合はWatson Knowledge Studioのインスタンスも作成する。  
+IBM CloudからWatson Discovery Serviceのインスタンスおよびコレクションを作成する。カスタムモデルを利用する場合はWatson Knowledge Studioのインスタンスも作成する。  
 Watson Discovery ServiceについてはAdvanced Plan(有償)が必要  
 Watson Knowledge StudioについてはLit Plan(無償)でもハンズオンは可能であるが、複数人で一つのアノテーター開発を行うときにはStandard Plan(有償)以上が必要  
 
